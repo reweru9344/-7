@@ -1,0 +1,68 @@
+/* Загальний фон сторінки */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #d4e7f9; /* ніжний пастельний блакитний */
+  margin: 0;
+  padding: 20px 0;
+}
+
+/* Контейнер резюме */
+.container {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff6f8; /* дуже світлий пастельний рожево-бежевий */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(178, 34, 34, 0.15);
+  overflow: hidden;
+}
+
+/* Ліва панель */
+.sidebar {
+  background-color: #a05466; /* пастельний бордовий */
+  color: #f6e8e9;            /* дуже світлий текст */
+  width: 280px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: inset -5px 0 15px -5px rgba(255, 182, 193, 0.3);
+}
+
+/* Фото кругле */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f6e8e9;
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.7);
+  margin: 0 auto 20px;
+  display: block;
+}
+
+/* Ім'я */
+.sidebar h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #f6e8e9;
+}
+
+/* Контактна інформація */
+.sidebar p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  color: #f6e8e9cc; /* трохи прозорий світлий текст */
+}
+
+/* Права частина контенту */
+.content {
+  flex-grow: 1;
+  background-color: #fef8f9; /* ніжний кремовий */
+  padding: 40px 50px;
+  color: #5b3e46;
+}
+
+/* Заголовок резюме */
+h1 {
+  font-size
