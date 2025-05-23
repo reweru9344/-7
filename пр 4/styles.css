@@ -1,0 +1,236 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background: #f0f0f0;
+}
+
+#circle {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%;
+}
+
+#square {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+
+#rectangle {
+  width: 150px;
+  height: 100px;
+  background: green;
+}
+
+#oval {
+  width: 150px;
+  height: 100px;
+  background: purple;
+  border-radius: 50%;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid orange;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid brown;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid darkcyan;
+}
+
+#rhombus {
+  width: 100px;
+  height: 100px;
+  background: magenta;
+  transform: rotate(45deg);
+}
+
+#trapezoid {
+  width: 0;
+  border-bottom: 100px solid yellow;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+
+#parallelogram {
+  width: 150px;
+  height: 100px;
+  background: teal;
+  transform: skew(30deg);
+}
+
+#star {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid gold;
+  transform: rotate(36deg);
+}
+
+#star6 {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 86.6px solid red;
+}
+
+#star6::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 86.6px solid red;
+}
+
+#pentagon {
+  width: 0;
+  border-style: solid;
+  border-width: 0 50px 86.6px 50px;
+  border-color: transparent transparent pink transparent;
+  position: relative;
+}
+
+#pentagon::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 0;
+  border-style: solid;
+  border-width: 50px 50px 0 50px;
+  border-color: pink transparent transparent transparent;
+}
+
+#hexagon {
+  width: 100px;
+  height: 55px;
+  background: #6c6;
+  position: relative;
+}
+
+#hexagon::before,
+#hexagon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+#hexagon::before {
+  top: -25px;
+  border-bottom: 25px solid #6c6;
+}
+
+#hexagon::after {
+  bottom: -25px;
+  border-top: 25px solid #6c6;
+}
+
+#octagon {
+  width: 100px;
+  height: 100px;
+  background: #999;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  background: red;
+  transform: rotate(-45deg);
+}
+
+#heart::before,
+#heart::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  background: red;
+  border-radius: 50%;
+}
+
+#heart::before {
+  top: -50px;
+  left: 0;
+}
+
+#heart::after {
+  left: 50px;
+  top: 0;
+}
+
+#infinity {
+  width: 200px;
+  height: 100px;
+  background: transparent;
+  border: 20px solid blue;
+  border-radius: 50%;
+  position: relative;
+}
+
+#infinity::after {
+  content: \"\";
+  width: 200px;
+  height: 100px;
+  background: transparent;
+  border: 20px solid blue;
+  border-radius: 50%;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+#comment-bubble {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.bubble-tail {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #ccc;
+}
+
+#pacman {
+  width: 0;
+  height: 0;
+  border: 50px solid yellow;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
