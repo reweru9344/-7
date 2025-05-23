@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Туристичного Спорядження</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Магазин Туристичного Спорядження</h1>
+    </header>
+
+    <!-- Навігаційна панель -->
+    <div class="navbar">
+        <button onclick="showSection('home')">Головна</button>
+        <button onclick="showSection('products')">Продукти</button>
+        <button onclick="showSection('about')">Про нас</button>
+        <button onclick="showSection('contact')">Контакти</button>
+    </div>
+
+    <!-- Секція Головна -->
+    <div id="home" class="section">
+        <h2>Ласкаво просимо до нашого магазину!</h2>
+        <p>У нас є все для вашого відпочинку на природі!</p>
+    </div>
+
+    <!-- Секція Продукти -->
+    <div id="products" class="section" style="display: none;">
+        <h2>Наші Продукти</h2>
+        <div class="product-container">
+            <!-- Продукт 1 -->
+            <div class="product">
+                <img src="images/tent.png" alt="Тент для кемпінгу" width="250" height="200">
+                <div class="product-info">
+                    <h3>Тент для кемпінгу</h3>
+                    <p>Захист від дощу та сонця.</p>
+                    <div class="price">₴1000</div>
+                    <button class="add-to-cart">Додати в кошик</button>
+                </div>
+            </div>
+
+            <!-- Продукт 2 -->
+            <div class="product">
+                <img src="images/backpack.png" alt="Рюкзак туристичний" width="250" height="200">
+                <div class="product-info">
+                    <h3>Рюкзак туристичний</h3>
+                    <p>Зручний рюкзак для походів.</p>
+                    <div class="price">₴1200</div>
+                    <button class="add-to-cart">Додати в кошик</button>
+                </div>
+            </div>
+
+            <!-- Продукт 3 -->
+            <div class="product">
+                <img src="images/sleeping_bag.png" alt="Спальний мішок" width="250" height="200">
+                <div class="product-info">
+                    <h3>Спальний мішок</h3>
+                    <p>Для комфортного сну в природі.</p>
+                    <div class="price">₴800</div>
+                    <button class="add-to-cart">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секція Про нас -->
+    <div id="about" class="section" style="display: none;">
+        <h2>Про нас</h2>
+        <p>Ми є лідерами на ринку туристичного спорядження. Ми пропонуємо широкий асортимент товарів для походів, кемпінгу та активного відпочинку.</p>
+    </div>
+
+    <!-- Секція Контакти -->
+    <div id="contact" class="section" style="display: none;">
+        <h2>Контакти</h2>
+        <p><strong>Телефон:</strong> +380 44 123 4567</p>
+        <p><strong>Email:</strong> info@tourstore.com</p>
+        <p><strong>Адреса:</strong> Київ, вул. Туристична 1, офіс 202</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Магазин Туристичного Спорядження</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Підключення JavaScript -->
+</body>
+</html>
